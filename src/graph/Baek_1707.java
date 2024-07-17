@@ -44,7 +44,8 @@ public class Baek_1707 {
 
         for(int i: arrayList[node]) {
             testColor = (testColor + 1) % 2;
-            DFS(i, testColor);
+            return DFS(i, testColor);
         }
+        return true;
     }
 }
